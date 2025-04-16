@@ -14,9 +14,6 @@ void main() async {
 
   // Initialize Hive
   await Hive.initFlutter();
-  print(' lets do it ');
-  print(' lets do it ');
-  print(' lets do it ');
   HydratedBloc.storage = await HydratedStorage.build(
     storageDirectory: HydratedStorage.webStorageDirectory,
   );
