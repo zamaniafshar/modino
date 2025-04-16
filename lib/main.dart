@@ -13,11 +13,11 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize Hive
-  await Hive.initFlutter();
-
-  HydratedBloc.storage = await HydratedStorage.build(
-    storageDirectory: HydratedStorage.webStorageDirectory,
-  );
+  // await Hive.initFlutter();
+  // hello i created conflicts
+  // HydratedBloc.storage = await HydratedStorage.build(
+  //   storageDirectory: HydratedStorage.webStorageDirectory,
+  // );
 
   runApp(const MyApp());
 }
